@@ -65,10 +65,10 @@ print()
 
 triangles = [ None ] * 12
 b = 0
-for i in range(1,7):
+for i in range(1, 7):
     b += 3 if b < 4 else -4
     triangles[i - 1] = ( i, b, 0 )
-    triangles[i + 5] = ( abs(b - 7), abs(i - 7), 7 )
+    triangles[i + 5] = ( b, i, 7 )
 
 for t in triangles:
     print(t)
